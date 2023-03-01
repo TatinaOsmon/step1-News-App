@@ -2,6 +2,10 @@
     package="com.example.step1">
     <!-- url_launcher -->
 <queries>
+  <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="https" />
+     </intent>
   <!-- If your app checks for SMS support -->
   <intent>
     <action android:name="android.intent.action.VIEW" />
@@ -13,6 +17,8 @@
     <data android:scheme="tel" />
   </intent>
 </queries>
+<!--internet-->
+ <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="step1"
         android:name="${applicationName}"
